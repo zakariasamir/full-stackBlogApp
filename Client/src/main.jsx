@@ -1,13 +1,14 @@
+import { AuthProvider } from "./context/AuthContext";
+
+import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { AuthProvider } from "./context/AuthContext";
-// Add StrictMode
-import { StrictMode } from 'react';
+import "./index.css"; // Make sure this line is present
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  <React.StrictMode>
     <AuthProvider>
       <App />
     </AuthProvider>
-  </StrictMode>
+  </React.StrictMode>
 );
